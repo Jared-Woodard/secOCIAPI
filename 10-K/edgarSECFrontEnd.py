@@ -18,6 +18,7 @@ import numpy as np
 headers = {'User-Agent': "jared.s.woodard@oracle.com"}
 
 def main() -> None:
+    # Create the Streamlit front end
     st.set_page_config(page_title="SEC Data Retrieval", page_icon="✍️", layout="centered")
     st.title("SEC Data Retrieval")
     st.write("Enter a stock ticker and submit to fetch its CIK, displayed below in a read-only text box.")
