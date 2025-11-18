@@ -25,11 +25,13 @@ def main() -> None:
 
     # Use a form so the app only reacts when the user clicks Submit
     with st.form("ticker_input_form", clear_on_submit=False):
+        # User Inputs Ticker Information
         user_input = st.text_input(
             "Ticker",
             placeholder="e.g., AAPL",
             help="Enter a stock ticker symbol (e.g., AAPL, MSFT, TSLA)."
         )
+        # User Inputs Competitor Cloud Spend
         competitor_cloud_spend = st.number_input(
                         "Competitor Cloud Spend (USD)",
                         min_value=0.0,
